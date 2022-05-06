@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Display & Dimension</title>
+
+	<style>
+
+		h3#block {background:orange}
+		p#block { background: orange; width:200px; height:75px; }
+		span#inline {background: orange;}
+		span#inlineblock {background:orange;width:100px;height:50px;display:inline-block;}
+		span#none {background:orange;width:100px;height:50px;display:none;}
+
+	</style>
+</head>
+<body>
+
+	<!-- tag div bersifat block -->
+	<div></div>
+
+	<!-- tag span bersifat inline -->
+	<span></span>
+
+
+	<h2>Display block</h2>
+	<ul>
+		<li>membuat baris baru saat dirender</li>
+		<li>dapat diset lebar dan tingginya</li>
+		<li>bila lebar tidak diset, maka lebar elemen akan memenuhi lebar dari parentnya.</li>
+		<li>di dalamnya dapat disimpan elemen bertipe block, inline dan inline block.</li>
+	</ul>
+	<h2>Contoh :</h3>
+	<h3 id="block">Halo Coders!</h1>
+	<p id="block"> Selamat datang di Codepolitan</p>
+
+	<hr>
+
+	<h2>Display Inline</h2>
+	<ul>
+		<li>tidak membuat baris baru saat dirender</li>
+		<li>lebar dan tinggi sebesar konten yang ada di dalamnya</li>
+		<li>lebar dan tingginya tidak dapat diatur</li>
+		<li>margin dan padding hanya mempengaruhi elemen secra horizontal, tidak vertikal</li>
+	</ul>
+	<h2>Contoh :</h3>
+	<h3 id="inline">Halo Coders!</h1>
+	<p id="inline"> Selamat datang di <span id="inline">Codepolitan</span></p>
+
+	<hr>
+
+	<h2>Display Inline-block</h2>
+	<ul>
+		<li>tidak ada elemen html yang default bertipe inline-block</li>
+		<li>nilai property display dapat diset manual menjadi inline-block</li>
+		<li>sifat dasar sama dengan inline</li>
+		<li>inline-block akan berpengaruh dari property width dan height</li>
+	</ul>
+	<h2>Contoh :</h3>
+	<h3 id="inlineblock">Halo Coders!</h1>
+	<p id="inlineblock"> Selamat datang di <span id="inlineblock">Codepolitan</span></p>
+
+	<hr>
+
+	<h2>Display None</h2>
+	<ul>
+		<li>Digunakan untuk menyembunyikan elemen dari layar browser.</li>
+	</ul>
+	<h2>Contoh :</h3>
+	<h3 id="inlineblock">Halo Coders!</h1>
+	<p> Selamat datang di<span id="none">Codepolitan</span></p>
+
+
+	<hr>
+
+	<h2>Opsi Nilai Width dan Height</h2>
+	<p>Opsi nilai widht dan height diantaranya : px, %, in, cm, dan lainnya.</p>
+
+	<h2>Property Dimensi</h2>
+	<p><b>property 	Keterangan</b>
+width 	mengatur lebar elemen
+height 	mengatur tinggi elemen
+min-width 	mengatur lebar minimum elemen
+min-height 	mengatur tinggi minimum elemen
+max-width 	mengatur lebar maksimum elemen
+max-height 	mengatur tinggi maksimum elemen</p>
+
+</body>
+</html>

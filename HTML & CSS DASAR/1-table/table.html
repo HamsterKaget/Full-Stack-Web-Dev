@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table HTML</title>
+</head>
+<body>
+
+	<h2>Dasar Tabel</h2>
+	<!-- table = inisiasi tabel | border = untuk memberikan border / pemisah diantara baris dan colom-->
+	<table border="1">
+		<!-- tr = table row / baris tabel -->
+		<tr>
+			<!-- th = table header , baris menjadi tebal  -->
+			<th>No</th>
+			<th>Nama</th>
+			<th>Alamat</th>
+		</tr>
+		<tr>
+			<!-- td = table data -->
+			<td>1</td>
+            <td>Roy</td>
+            <td>Bandung</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Si Boy</td>
+            <td>Jakarta</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Roni</td>
+            <td>Surabaya</td>
+        </tr>
+	</table>
+
+
+	<h2>Colspan</h2>
+	<table border="1">
+        <tr>
+        	<!-- colspan = perintah untuk menggabungkan beberapa colom menjadi satu -->
+            <th colspan="2">No</th>
+            <th>Alamat</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Roy</td>
+            <td>Bandung</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Si Boy</td>
+            <td>Jakarta</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Roni</td>
+            <td>Surabaya</td>
+        </tr>
+    </table>
+
+    <h2>rowspan</h2>
+    <table border="1">
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Alamat</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Roy</td>
+            <!-- rowspan = perintah untuk menggabungkan beberapa baris menjadi satu -->
+            <td rowspan="3">Bandung</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Si Boy</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Roni</td>
+        </tr>
+    </table>
+
+
+    <hr>
+
+    <a href="styletable.html">Styling in Table</a>
+    <a href="../2-list/list.html">List</a>
+
+</body>
+</html>
