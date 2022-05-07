@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>2
+		Box Model & Overflow
+	</title>
+
+	<style>
+		p.margin
+		{
+		    background: orange;
+		    width   : 160px;
+		    height  : 160px;
+		    margin: 20px auto;
+		}
+
+		p.margin2
+		{
+		    background: orange;
+		    width   : 160px;
+		    height  : 160px;
+		    margin: 20px 50px 30px 25px;
+		}
+		p.padding
+		{
+		    background: orange;
+		    width   : 160px;
+		    height  : 160px;
+		    padding: 20px 50px 30px 25px;
+		}
+		p.Dotted { border: 2px dotted orange; }
+		p.Dashed { border: 2px dashed orange; }
+		p.solid { border: 2px solid orange; }
+
+		p.content-box {
+			background: orange;
+		    width   : 160px;
+		    height  : 160px;
+		    padding: 40px;
+		}
+
+		p.border-box {
+			background: orange;
+		    width   : 160px;
+		    height  : 160px;
+		    padding: 40px;
+		    box-sizing:border-box;
+		}
+		p.visible
+		{
+		    background: orange;
+		    width   : 160px;
+		    height  : 160px;
+		    padding: 40px;
+		    box-sizing:border-box;
+		}
+		p.auto
+		{
+		    background: orange;
+		    width   : 160px;
+		    height  : 160px;
+		    padding: 40px;
+		    box-sizing:border-box;
+		    overflow: auto;
+		}
+		p.scroll
+		{
+		    background: orange;
+		    width   : 160px;
+		    height  : 160px;
+		    padding: 40px;
+		    box-sizing:border-box;
+		    overflow: scroll;
+		}
+		p.hidden
+		{
+		    background: orange;
+		    width   : 160px;
+		    height  : 160px;
+		    padding: 40px;
+		    box-sizing:border-box;
+		    overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Box Model & Overflow</h1>
+
+	<p>margin
+
+	Jarak spasi antara satu elemen dengan elemen lain atau elemen parentnya.
+
+	Margin bersifat transparan.
+
+	border
+
+	Batas garis yang mengelilingi padding dan content.
+
+	padding
+
+	Jarak spasi antara border dan content.
+
+	Padding bersifat transparan.
+
+	content
+
+	Isi dari elemen, bisa berupa text atau elemen lain. Text, gambar atau elemn lainnya ditampilkan di bagian ini.</p>
+
+	<hr>
+
+	<h2>Margin :</h2>
+
+	<p class="margin">Welcome to my homepage. Here you can read about codepolitan.</p>
+
+	<ul>
+		margin: 20px 50px 30px 25px
+		<li>top margin 20px</li>
+		<li>right margin 50px</li>
+		<li>bottom margin 30px</li>
+		<li>left margin 25px</li>
+	</ul>
+
+	<p class="margin2">Welcome to my homepage. Here you can read about codepolitan.</p>
+
+	<hr>
+
+	<h2>Padding</h2>
+
+	<p><b>Note :</b>padding tidak boleh bernilai negatif.</p>
+
+	<ul>
+
+		padding: 20px 50px 30px 100px;
+		<li>top pading 20px</li>
+		<li>right padding 50px</li>
+		<li>bottom padding 30px</li>
+		<li>left padding 100px</li>
+	</ul>
+
+	<p class="padding">Welcome to my homepage. Here you can read about codepolitan.</p>
+
+	<hr>
+
+	<h2>Border</h2>
+
+
+	<p>border : width style color;</p>
+
+	<ul>
+		Border Style
+		<li>Dotted : garis dengan kombinasi bulat bulat</li>
+		<li>Dashed : garis dengan kombinasi garis putus putus</li>
+		<li>Solid : garis lurus</li>
+	</ul>
+
+	<p class="Dotted">DOTTED</p>
+	<p class="Dashed">DASHED</p>
+	<p class="solid">SOLID</p>
+
+	<hr>
+
+	<h1>Box Sizing</h1>
+
+	<h2>Content box</h2>
+
+	<p>Apabila menggunakan content-box , maka lebar box akan dijumlahkan dengan padding.</p>
+
+	<p>Misal lebar konten 160px dengan padding left 40px dan padding right 40px, maka total lebar box tersebut menjadi 240px.</p>
+
+	<p class="content-box">Welcome to my homepage. Here you can read about codepolitan.</p>
+
+	<hr>
+
+	<h2>Border box</h2>
+	<p>Pada border-box ukuran sudah ditentukan 160px, tidak akan dijumlahkan dengan padding yang Kita tentukan.</p>
+
+	<p class="border-box">Welcome to my homepage. Here you can read about codepolitan.</p>
+
+	<hr>
+
+	<h1>Overflow</h1>
+
+	<h2>Visible</h2>
+	<p class="visible">Welcome to my homepage. Here you can read about codepolitan.</p>
+
+	<hr>
+	<h2>Auto</h2>
+
+	<p>Pada overflow auto akan ditambahkan scroll apabila konten yang ada melebihi box yang disediakan, namun bila konten yang ada tidak melebihi box, maka tidak ditambahkan scroll.</p>
+
+	<p class="auto">Welcome to my homepage. Here you can read about codepolitan.</p>
+
+	<hr>
+
+	<h2>Scrool</h2>
+
+	<p>Pada overflow scroll, setiap box akan ditambahkan scroll tidak memandang apakah konten yang ada sedikit ataupun banyak.</p>
+
+	<p class="scroll">Welcome to my homepage. Here you can read about codepolitan.</p>s
+
+	<hr>
+
+	<h2>Hidden</h2>
+
+	<p>Pada overflow hidden, apabila konten yang ada banyak dan melebihi box, maka konten sisanya tidak akan ditampilkan.</p>
+
+	<p class="hidden">Welcome to my homepage. Here you can read about codepolitan.</p>
+
+</body>
+</html>

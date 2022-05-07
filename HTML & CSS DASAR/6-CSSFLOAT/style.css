@@ -1,0 +1,11 @@
+img.none, p.none {
+	float: none;
+}
+
+img.left, p.left {
+	float: left;
+}
+
+img.right, p.right {
+	float: right;
+}
