@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Background</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<h1>CSS Background</h1>
+
+	<p>Properties background dalam css digunakan untuk mendefinisikan efek background dalam suatu elemen, Terdapat beberapa properties background yang dapat digunakan dalam CSS, antara lain :</p>
+
+	<p><b>background-color</b> properti background-color ini adalah untuk menentukan warna background dari sebuah element. Berikut contoh penggunaanya:</p>
+
+	<p class="code">body { background-color: #b0c4de; }</p>
+
+	<ul>
+		Di dalam CSS, warna ditentukan oleh :
+		<li>HEX value – seperti “#ff0000”</li>
+		<li>RGB value – seperti “rgb(255,0,0)”</li>
+		<li>Nama Warna – seperti “red”</li>
+	</ul>
+
+	<p><b>background-image</b> properti background-image ini adalah untuk menentukan background berupa gambar. Contoh penggunaanya :</p>
+
+	<p class="code">body { background-image: url(image.jpg); }</p>
+
+	<p><b>background-repeat</b> secara default, properti background-repeat mengulang gambar secara horizontal dan vertikal. Gambar dapat diulang dengan menggunakan repeat-x atau repeat-y.</p>
+
+	<p class="code">
+		body 
+		{
+			background-image: url(image.jpg);
+    		background-repeat: repeat-y;
+		}
+	</p>
+
+	<p><b>background-position</b> kita dapat menentukan posisi background, value yang dapat digunakan antara lain: left top, left center, left bottom, right top, right center, right bottom, center top, center center, center bottom.</p>
+
+	<p class="code">
+		body 
+		{ 
+			background-image: url(image.jpg);
+			background-repeat: no-repeat;
+			background-position: center; 
+		}
+	</p>
+
+</body>
+</html>

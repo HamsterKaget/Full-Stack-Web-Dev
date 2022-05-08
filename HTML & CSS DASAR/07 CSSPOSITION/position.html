@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Position</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<h1>CSS Position</h1>
+
+	<p>Seperti yang kita tahu, CSS Position itu terdiri dari 4 nilai, yaitu static, relative, absolute, dan fixed. Secara default, tag-tag yang kita buat itu sudah memiliki nilai <span class="code">position:static</span>. Berikut kita bahas lebih jauh dari keempat css position tersebut :</p>
+
+	<h2>Static</h2>
+
+	<ul>
+		<span class="code">position : static;</span>
+		<li>Static adalah nilai default dari tiap-tiap elemen ketika tidak diberi properti position </li>
+		<li>Menggunakan position selain static (non-static),akan membuat sebuah elemen menjadi seolah olah berbeda dimensi dari elemen lainnya.</li>
+		<li>Elemen yang diberi position selain static dapat menggunakan properti top, left, bottom dan right untuk mengatur posisinya .</li>
+	</ul>
+
+	<h3>Contoh :</h3>
+
+	<img src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/position1.png">
+
+	<h2>Relative</h2>
+
+	<ul>
+		<span class="code">position : relative;</span>
+		<li>Ketika kita menggerakan elemen dengan posisi relative (menggunakan properti top, left. bottom dan right), ruang yang ditempati elemen tersebut masih ada</li>
+		<li>Ketika kita menggerakan elemen dengan posisi relative, elemen akan bergerak relatif terhadap posisi semula-nya</li>
+		<li>Jika kita memberi properti top: 0; dan left: 0; maka elemen tidak berubah posisinya.</li>
+	</ul>
+
+	<h3>Contoh :</h3>
+
+	<img src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/position2.png">
+
+	<h2>Absolute</h2>
+
+	<ul>
+		<span class="code">position : absolute;</span>
+		<li>Ketika kita menggerakan elemen dengan posisi absolute (menggunakan properti top, left, bottom dan right), ruang yang ditempati oleh elemen tersebut dianggap tidak ada.</li>
+		<li>Ketika kita menggerakan elemen dengan posisi absolute, elemen akan bergerak relatif terhadap posisi dan elemen parent-nya, selama elemen parent-nya memiliki posisi yang juga non-static.</li>
+		<li>Jika kita memberi properti top: 0; dan left: 0; maka elemen akan berada di ujung kiri atas dari elemen-nya</li>
+	</ul>
+
+	<h3>Contoh :</h3>
+
+	<img src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/position3.png">
+
+	<p>Jika Absolute tidak memiliki parent relative maka posisinya akan seperti berikut ini :</p>
+	<img src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/position4.png">
+
+	<p>Tetapi jika Absolute memiliki parent relative maka absolute akan menempel pada parent relative seperti dibawah ini :</p>
+	<img src="https://cdn-cdpl.sgp1.cdn.digitaloceanspaces.com/courses/basic-html-dan-css/images/position5.png">
+
+
+	<h2>Fixed</h2>
+
+	<ul>
+		<span class="code">position : fixed;</span>
+		<li>Ketika kita menggerakan elemen dengan posisi fixed (menggunakan properti top, left, bottom dan right), ruang yang ditempati oleh elemen tersebut dianggap tidak ada</li>
+		<li>Ketika kita menggerakan elemen dengan posisi absolute, elemen akan bergerak relatif terhadap window (browser), meskipun elemen parent-nya bernilai non-static</li>
+		<li>Jika kita memberi properti top: 0; dan left: 0; maka elemen akan berada di ujung kiri atas dari elemen parent-nya</li>
+		<li>Elemen akan 'terkunci' dan tidak bergerak dari posisinya meskipun halaman di-scroll</li>
+	</ul>
+
+	<h3>Contoh :</h3>
+
+	<img src="">
+
+</body>
+</html>

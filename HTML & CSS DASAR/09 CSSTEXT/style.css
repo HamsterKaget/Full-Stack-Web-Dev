@@ -1,0 +1,45 @@
+.overline
+{
+  text-decoration: overline;
+}
+.through
+{
+  text-decoration: line-through;
+}
+.underline
+{
+  text-decoration: underline;
+}
+.none
+{
+  text-decoration: none;
+}
+
+h1.uppercase 
+{
+  text-transform: uppercase;
+}
+h1.lowercase 
+{
+  text-transform: lowercase;
+}
+h1.capitalize 
+{
+  text-transform: capitalize;
+}
+h1.none 
+{
+  text-transform: none;
+}
+
+.spasi {
+  letter-spacing: -2px;
+}
+
+.spasi1 {
+  word-spacing: 10px;
+}
+
+.spasi2 {
+  word-spacing: -5px;
+}
