@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>selector</title>
+</head>
+<body>
+
+	<p>CSS Selector
+
+Sebelumnya sudah dibahas tentang css selector pada materi css dan style html dasar , tapi pada materi ini kita akan coba bahas lebih mendalam lagi .
+
+Pada css terdapat selector yang digunakan untuk memilih elemen HTML yang akan dikenai style , pemilihan elemen menggunakan nama tag, nilai atribut, atau pola tertentu.
+Jenis selector
+
+nama tag
+
+id
+
+class
+
+atribut
+
+complex selector
+Selector dengan nama Tag
+
+Semisal kita ingin mewarnai body maka langsung saja ketikan selector body, begitupun dengan h1 , p atau yang lainnya.
+Koma pada selector
+
+Koma pada selector berfungsi untuk memilih elemen lebih dari satu ,
+
+h1,h2,h3,p
+{
+    font-family : "arial", sans-sarif;
+    color:#666;
+}
+
+Jika dilihat pada potongan kode diatas selecteor h1, h2, h3, p berarti elemen tersebut di set dengan style yang sama.
+Spasi pada selector
+
+<style>
+body
+{
+    background-color : #fff2cc;
+}
+p span 
+{
+    background-color: #7CFC00;
+    padding: 4px 3px;
+}
+</style>
+<body>
+    <h1>Ini elemen judul</h1>
+    <p>Ini elemen paragraf dengan <span>highlight</span> pada kata tertentu.</p>
+</body>
+
+Jika kita lihat pada kode diatas jika kita menambahkan spasi pada selektor maka style span akan terpengaruh jika elemen tersebut ada didalam tag <p>.
+Selector dengan id dan class
+
+Selector class digunakan untuk menentukan style juga sama seperti id. Bedanya adalah jika id hanya boleh dipanggil satu kali saja, class bisa dipanggil berkali kali pada satu halaman. Selector ini ditulis dengan awalan titik atau dot “.” pada css dan class=“nama-class” pada HTML. Sedangkan selector id hanya boleh dipanggil satu kali, selain itu untuk Selector ini ditulis dengan awalan pagar “#” pada css dan id=“nama-id” pada HTML.
+
+Berikut contoh implementasi selector id dan class.
+
+<style>
+    #higlight {background-color:yellow}
+    .red{color:red}
+</style>
+<body>
+    <h1>Penggunaan Selector Class dan Id</h1>
+
+    <p class="red">Ini selector class</p>
+    <p id="higlight">Ini selector id</p>
+</body>
+
+Selector spesifik
+
+<style>
+body{
+    background-color: #fff2c;
+    text-align:center;
+}
+p{
+    font-size: 20px;
+}
+p.small{
+    font-size: 16px;
+}
+</style>
+<body>
+    <h1 class="small">Judul ini tidak terpengaruh class small</h1>
+
+    <p>Ini elemen paragraf dengan ukuran normal 16px.</p>
+
+    <p class="small">Ini paragraf dengan ukuran lebih kecil </p>
+
+    <p class="small">Ini paragraf dengan ukuran normal seperti pertama.</p>
+
+</body>
+
+Jika kita lihat pada kode diatas maka hanya paragraf yang memiliki class small yang akan dikenakan style didalamnya, sedangkan yang tidak terdapat claas small maka akan dikenakan style yang ada pada tag p{font-size: 20px;} .
+Selector Multiple class
+
+<style>
+body{
+    background-color: #fff2cc;
+    text-align:center;
+}
+.red{
+    fcolor: red;
+}
+.big {
+    font-size: 20px;
+}
+</style>
+<body>
+    <h1 class="red">Judul ini tidak terpengaruh class small</h1>
+
+    <p>paragraf ini berwarna default hitam dan teks berukuran normal.</p>
+
+    <p class="big">paragraf ini berwarna default hitam dan teks berukuran normal. </p>
+
+    <p class="red big">paragraf ini berwarna merah dan berukuran teks 20px.</p>
+
+</body>
+
+Jika kita lihat pada potongan kode diatas terdapat penggunaan class red big secara bersamaan maka secara otomatis style kedua class tersebut akan dikenakan, dimana teks didalam tag <p> akan berwarna merah dan memiliki font berukuran 20px.
+Selector dengan Atribut
+
+<style>
+body
+{
+    background-color: #fff2cc;
+}
+input
+{
+    width: 100%;
+    padding: 10px;
+}
+input[type=password]{
+    border: 2px solid red;
+}
+</style>
+<body>
+    <form action="#">
+        Nama : <br>
+        <input type="text">
+
+        Password: <br>
+        <input type="password">
+    </form>
+</body>
+
+Jika kita lihat pada kode diatas, maka input type password akan dikenakan style pada input[type=password]{border: 2px solid red;}.
+Selector pseudoclass
+
+Pseudoclass selector adalah selector CSS yang diikuti oleh titik dua. kita mungkin sudah sangat familiar dengan beebrapa perintahnya seperti hover:
+
+a:hover 
+{
+      /* hover adalah sebuah pseudo class */
+}
+
+<style>
+body
+{
+    background-color: #fff2cc;
+    text-align :center;
+}
+button
+{
+    background-color: lightsteelblue;
+    border: 1px solid steelblue;
+    font-size: 20px;
+    padding: 20px 40px;
+}
+button:hover
+{
+    background-color: steelblue;
+    color: white;
+}
+</style>
+<body>
+    <button>Hover Saya</button>
+</body></p>
+
+</body>
+</html>
