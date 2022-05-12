@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery</title>
+  </head>
+  <body>
+    <h1>Pengertian JQuery</h1>
+    <p>
+      jQuery adalah kumpulan fungsi-fungsi Javascript yang berguna untuk
+      memudahkan penulisan kode Javascript. jQuery mempunyai fitur seperti
+      menyederhanakan document traversing, event handling, animating dan
+      interaksi AJAX untuk pengembangan web secara cepat. Sang creator jQuery
+      adalah John Resig , beliau merupakan master javascript yang menciptakan
+      sebuah library untuk mempermudah developer agar dapat membuat aplikasi
+      javascript tanpa harus mengetik javascript dari awal.
+    </p>
+    <h1>Manfaat Query</h1>
+    <ul>
+      <li>Menemukan elemen dalam dokumen HTML</li>
+      <li>Mengubah konten HTML</li>
+      <li>
+        Mendengarkan apa yang dilakukan pengguna dan melakukan tindakan yang
+        sesuai (event listener)
+      </li>
+      <li>Membuat animasi konten di halaman</li>
+      <li>Berbicara melalui jaringan untuk mengambil konten baru. (AJAX)</li>
+    </ul>
+    <h1>Document Object Model (DOM)</h1>
+    <p>
+      Merupakan sebuah struktur seperti pohon yang dibuat oleh browser sehingga
+      kita dapat dengan cepat menemukan elemen HTML menggunakan Javascript.
+    </p>
+    <h1>Cara memanggil jQuery</h1>
+    <p>
+      Agar dapat menggunakan jQuery, kita harus memanggil file nya terlebih
+      dahulu. Contohnya kita bisa menautkan atau memuat link jQuery yang
+      disediakan di website resminya seperti berikut ini :
+    </p>
+    <p>
+      &lt;html&gt; &lt;head&gt; &lt;script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;&lt;/script&gt;
+      &lt;/head&gt; &lt;/html&gt;
+    </p>
+
+    <p>
+      Karena JavaScript (dan jQuery) dapat berjalan sebelum DOM "siap" , maka
+      kita jalankan (listen) kode jQuery jika dokumen (DOM) sudah siap (ready).
+    </p>
+    <p>
+      $(document).ready(function()) { //kode jQuery });<br /><br />Tambahkan
+      script di atas pada bagian awal halaman, hal ini untuk mengantisipasi agar
+      jQuery tidak diload terlebih dahulu sebelum halaman siap.
+    </p>
+  </body>
+</html>
