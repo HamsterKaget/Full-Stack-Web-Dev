@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <title>Boostrap 4</title>
+  </head>
+  <body>
+    <h1>Sistem Grid Boostrap 4</h1>
+    <p>
+      Sistem grid digunakan untuk mengatur jumlah kolom dalam pembuatan layout
+      suatu halaman. Sistem grid pada Bootstrap 4 sama seperti pada Bootstrap 3
+      yaitu memungkinkan hingga 12 kolom dalam satu halaman.
+    </p>
+
+    <h2>Class Grid</h2>
+    <p>
+      Sistem grid pada Boostrap 4 mempunyai 5 class, antara lain : .col-
+      digunakan untuk perangkat ekstra kecil - lebar layar kurang dari 576px.
+      .col-sm- digunakan untuk perangkat kecil - lebar layar sama lebih dari
+      atau sama dengan 576px. .col-md- digunakan untuk perangkat medium - lebar
+      layar sama lebih dari atau sama dengan 768px. .col-lg- digunakan untuk
+      perangkat besar- lebar layar sama lebih dari atau sama dengan 992px.
+      .col-xl- digunakan untuk perangkat ekstra besar- lebar layar sama lebih
+      dari atau sama dengan 1200px.
+    </p>
+
+    <h2>Struktur Dasar Grid</h2>
+    <p>
+      Hampir sama dengan Bootstrap 3 , Pertama yang harus dilakukan adalah buat
+      baris &lt;div class = "row"&gt; , kemudian, tambahkan jumlah kolom yang
+      diinginkan pada class .col - * - * yang sesuai. Perhatikan bahwa angka
+      dalam .col - * - * harus selalu berjumlah 12 untuk setiap baris atau class
+      row. Berikut contoh pembuatan struktur dasar grid.
+    </p>
+
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-8"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3"></div>
+    </div>
+    <div class="row">...</div>
+
+    <h2>Pembuatan Layout dengan grid</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 bg-primary">Ini Header</div>
+        <div class="col-md-4 bg-success">Ini Logo</div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 bg-warning">Ini navigasi</div>
+        <div class="col-md-5 bg-success">Ini konten 1</div>
+        <div class="col-md-5 bg-danger">Ini konten 2</div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 bg-info">Ini footer</div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
