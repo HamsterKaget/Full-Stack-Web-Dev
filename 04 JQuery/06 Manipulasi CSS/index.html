@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Page Title</title>
+        <style>
+          .merah {
+            color: red;
+          }
+          .biru {
+            color: blue;
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Kemana Anda ingin pergi ?</h1>
+        <ul class="lokasi">
+          <li class="bandung">Bandung</li>
+          <li class="surabaya">Surabaya</li>
+          <li class="jakarta">Jakarta</li>
+        </ul>
+        <button id="gantiBiru">Jadi biru!</button>
+        <button id="gantiMerah">Jadi merah!</button>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+          $(document).ready(function () {
+            $(".bandung").addClass("merah");
+            $("#gantiBiru").on("click", function () {
+              $(".bandung").removeClass("merah");
+              $(".bandung").addClass("biru");
+            });
+            $("#gantiMerah").on("click", function () {
+              $(".bandung").removeClass("biru");
+              $(".bandung").addClass("merah");
+            });
+          });
+        </script>
+      </body>
+    </html>
+
+    <!--load file jquery-->
+    <script src="../jquery-3.6.0.slim.min.js"></script>
+  </body>
+</html>

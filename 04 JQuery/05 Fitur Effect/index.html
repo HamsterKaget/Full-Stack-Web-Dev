@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Kemana Anda ingin pergi ?</h1>
+    <ul class="lokasi">
+      <li class="bandung">
+        Bandung
+        <button id="keBandung">Pergi</button>
+        <button id="hideBandung">H</button>
+        <button id="hapusBandung">X</button>
+      </li>
+      <li class="jakarta">Jakarta</li>
+      <li class="surabaya">Surabaya</li>
+    </ul>
+    <button id="toggleButton">Toggle Bandung</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#keBandung").on("click", function () {
+          alert("Saya mau ke Bandung");
+        });
+        $("#hapusBandung").on("click", function () {
+          $(".bandung").remove();
+          alert("Bandung dihapus");
+        });
+        $("#hideBandung").on("click", function () {
+          $(".bandung").hide();
+        });
+        $("#toggleButton").on("click", function () {
+          $(".bandung").toggle();
+        });
+      });
+    </script>
+
+    <!--load file jquery-->
+    <script src="../jquery-3.6.0.slim.min.js"></script>
+  </body>
+</html>
