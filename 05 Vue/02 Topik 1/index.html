@@ -16,14 +16,22 @@
       crossorigin="anonymous"
     />
 
-    <title>Belajar Vue</title>
+    <title>Belajar Vue lorem</title>
   </head>
   <body>
-    <div id="app">
-      <img class="img-fluid" v-bind:src="image" alt="" />
-      <h2>{{ name }}</h2>
-      <p>{{ description }}</p>
-      <div class="h3">{{ price }}</div>
+    <div class="container" id="app">
+      <div class="row d-flex mb-3 align-items-center" v-for="item in products">
+        <div v-if="item.price <= Number(maximum)">
+          <div class="col-sm-4">
+            <img :src="item.image" :alt="item.name" class="img-fluid d-block" />
+          </div>
+          <div class="col">
+            <h3 class="text-info">{{ item.name }}</h3>
+            <p class="mb-0">{{ item.description }}</p>
+            <div class="h5 float-right">Rp.{{ item.price }}</div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
