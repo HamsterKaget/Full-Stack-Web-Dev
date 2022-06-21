@@ -1,17 +1,26 @@
 <?php 
 
-$arr = [250, true, ["Ayam", "Kucing"]];
-
-var_dump($arr);
-echo $arr[2][0];
-
-
 $herbivora = ["Kambing", "Sapi"];
 $karnivora = ["Kucing", "Anjing"];
 $omnivora = ["ayam", "tikus"];
 
-$animal = [ "herbivora" => $herbivora, "karnivora" => $karnivora, "omnivora" => $omnivora];
+$animal = ["herbivora" => $herbivora, "karnivora" => $karnivora, "omnivora" => $omnivora];
 
-echo $animal[omnivora][1]; // output : tikus
+echo $animal["omnivora"][1]; // output : tikus
+
+$mahasiswa = array
+  (
+  array("Marimar",20,"Wanita"),
+  array("Soledad",25,"Wanita"),
+  array("Alfonso",30,"Pria")
+  );
+for ($baris = 0; $baris < 3; $baris++) {
+  echo "<p><b>Baris No: $baris</b></p>";
+  echo "<ul>";
+  for ($kolom = 0; $kolom < 3; $kolom++) {
+    echo "<li>".$mahasiswa[$baris][$kolom]."</li>";
+  }
+  echo "</ul>";
+}
 
 ?>
