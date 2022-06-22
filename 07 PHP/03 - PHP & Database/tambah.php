@@ -23,7 +23,7 @@
 </head>
 <body>
 
-    <form action="update.php" method="post">
+    <form action="insert.php" method="post">
         <label for="nama">Masukan Nama Lengkap : </label><br>
         <input type="text" name="nama" id="nama" required>
         <br>
