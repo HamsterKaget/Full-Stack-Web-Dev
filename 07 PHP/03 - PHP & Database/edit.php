@@ -33,7 +33,7 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
         <input type="hidden" name="id" value=<?= $result[0]['id']; ?>> 
 
         <label for="nama">Masukan Nama Lengkap : </label><br>
-        <input type="text" name="nama" id="nama" value=<?= $result[0]['nama']; ?> required>
+        <input type="text" name="nama" id="nama" value="<?= $result[0]['nama']; ?>" required>
         <br>
         <label for="alamat">Masukan Domisili / Alamat : </label><br>
         <textarea name="alamat" id="alamat" cols="30" rows="10" required><?= $result[0]['alamat']; ?></textarea>
