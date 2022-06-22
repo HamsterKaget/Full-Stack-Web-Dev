@@ -21,7 +21,7 @@ $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
 </head>
 <body>
 
-    <h1 style="text-align: center">List Data Dari Database</h1>
+    <h1 style="text-align: center">CRUD PHP</h1>
 
     <div class="menu" style="text-align: center;">
         <h3><a href="tambah.php">Tambah Data</a> | <a href="#">Lainnya</a></h3>
