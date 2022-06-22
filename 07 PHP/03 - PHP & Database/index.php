@@ -2,7 +2,9 @@
 
 include('connect.php'); 
 
-$keyword = $_GET['keyword'];
+$keyword = '';
+if(isset($_GET['keyword']))
+    $keyword = $_GET['keyword'];
 
 $query = mysqli_query($db,"SELECT * FROM karyawan WHERE nama LIKE '%$keyword%'");
 $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
@@ -27,7 +29,7 @@ $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
         <h3><a href="tambah.php">Tambah Data</a> | <a href="#">Lainnya</a></h3>
         
         <form action="" method="get">
-            <input type="text" name="keyword" id="keyword" placeholder="Masukan nama .... " value='<?= $_GET['keyword']; ?>'>
+            <input type="text" name="keyword" id="keyword" placeholder="Masukan nama .... " value='<?= $keyword; ?>'>
             <button type="submit">Search</button>
         </form> 
     </div>
